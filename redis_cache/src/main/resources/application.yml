@@ -1,0 +1,18 @@
+#jpa连接参数
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1771291wei@
+    url: jdbc:mysql://106.12.27.130:3306/map?characterEncoding=utf-8&useSSL=false
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+#redis连接参数
+  redis:
+    database: 0
+    host: 106.12.91.177
+    port: 6379
+    password: jibin110110
