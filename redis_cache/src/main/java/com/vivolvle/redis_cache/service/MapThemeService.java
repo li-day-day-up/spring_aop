@@ -8,4 +8,6 @@ import com.vivolvle.redis_cache.entity.MapTheme;
  */
 public interface MapThemeService {
     MapTheme getById(Long id);
+
+    void update(Long id, String name);
 }

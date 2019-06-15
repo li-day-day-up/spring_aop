@@ -20,4 +20,9 @@ public class MapThemeController {
     public MapTheme getById(@RequestParam("id") Long id) {
         return mapThemeService.getById(id);
     }
+
+    @GetMapping("/update")
+    public void update(@RequestParam("id") Long id, @RequestParam("name") String name) {
+        mapThemeService.update(id, name);
+    }
 }

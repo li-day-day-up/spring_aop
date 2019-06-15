@@ -1,6 +1,7 @@
 package com.vivolvle.redis_cache.service.impl;
 
 import com.vivolvle.redis_cache.cache.annotation.RedisCache;
+import com.vivolvle.redis_cache.cache.annotation.RedisEvict;
 import com.vivolvle.redis_cache.entity.MapTheme;
 import com.vivolvle.redis_cache.repository.MapThemeRepository;
 import com.vivolvle.redis_cache.service.MapThemeService;
@@ -20,5 +21,13 @@ public class MapThemeServiceImpl implements MapThemeService {
     @RedisCache(type = MapTheme.class)
     public MapTheme getById(Long id) {
         return mapThemeRepository.findById(id).get();
+    }
+
+    @Override
+    @RedisEvict(type = MapTheme.class)
+    public void update(Long id, String name) {
+        MapTheme mapTheme = mapThemeRepository.findById(id).get();
+        mapTheme.setName(name);
+        mapThemeRepository.save(mapTheme);
     }
 }

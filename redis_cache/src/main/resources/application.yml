@@ -13,6 +13,6 @@ spring:
 #redis连接参数
   redis:
     database: 0
-    host: 106.12.91.177
+    host: 106.12.27.130
     port: 6379
-    password: jibin110110
+    password: 1771291wei@
