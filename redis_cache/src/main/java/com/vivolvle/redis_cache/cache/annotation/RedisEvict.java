@@ -3,9 +3,8 @@ package com.vivolvle.redis_cache.cache.annotation;
 import java.lang.annotation.*;
 
 /**
- * @author NagisaZZ
- * @description: RedisEvict注解
- * @date 2019/4/1  16:16
+ * @Author: weilz
+ * @Date: 2019/6/14 17:51
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)

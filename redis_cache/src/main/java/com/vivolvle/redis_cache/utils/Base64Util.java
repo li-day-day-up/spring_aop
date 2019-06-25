@@ -3,9 +3,8 @@ package com.vivolvle.redis_cache.utils;
 import org.apache.tomcat.util.codec.binary.Base64;
 
 /**
- * @author NagisaZZ
- * @description: Base64Util
- * @date 2019/4/1  14:57
+ * @Author: weilz
+ * @Date: 2019/6/14 17:51
  */
 public class Base64Util {
 
