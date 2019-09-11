@@ -8,7 +8,7 @@ import java.util.Objects;
  * @Date: 2019/6/14 17:46
  */
 @Entity
-@Table(name = "map_theme", schema = "map")
+@Table(name = "map_theme", schema = "caffeine")
 public class MapTheme {
     private long id;
     private String name;
